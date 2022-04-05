@@ -1,4 +1,9 @@
+import os
 import discord
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 default_intents=discord.Intents.default() #permissions par defaut
 default_intents.members = True #perissions relative aux membres 
@@ -39,4 +44,4 @@ async def on_message(message):
 
 
 
-client.run("OTU4NjkwODE0NTA5MzUxMDEy.YkRAZQ.YdcjZAmcwCTPVZUWzywEPQ5yZ30") 
+client.run(os.getenv("TOKEN")) 
