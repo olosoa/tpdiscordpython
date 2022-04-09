@@ -10,6 +10,15 @@ class DocBot(commands.Bot):
 	def __init__(self):
 		super().__init__(command_prefix="/")
 
+	async def on_ready(self):
+		print("Le bot est pret.")	
+
+
+	async def on_message(self,message):
+		if message.content.lower() == "ping":		
+				await message.channel.send("pong")
+
+
 
 
 
