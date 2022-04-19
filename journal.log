@@ -1,0 +1,399 @@
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-jl60",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'tppython', 'mfa_enabled': False, 'id': '958690814509351012', 'flags': 0, 'email': None, 'discriminator': '1009', 'bot': True, 'avatar': None}, 'session_id': '4ed07f65e2ff1b2db04a0eb0be22e70e', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '958694310864363543'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'st-pete'], 'application': {'id': '958690814509351012', 'flags': 303104}, '_trace': ['["gateway-prd-main-jl60",{"micros":155918,"calls":["discord-sessions-blue-prd-2-104",{"micros":153481,"calls":["start_session",{"micros":127677,"calls":["discord-api-f5c7b6c7-mwn8x",{"micros":113757,"calls":["get_user",{"micros":24953},"add_authorized_ip",{"micros":5531},"get_guilds",{"micros":15649},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":22750,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-jl60",{"micros":155918,"calls":["discord-sessions-blue-prd-2-104",{"micros":153481,"calls":["start_session",{"micros":127677,"calls":["discord-api-f5c7b6c7-mwn8x",{"micros":113757,"calls":["get_user",{"micros":24953},"add_authorized_ip",{"micros":5531},"get_guilds",{"micros":15649},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":22750,"calls":[]}]}]}] (Session ID: 4ed07f65e2ff1b2db04a0eb0be22e70e).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [], 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '958694311342522428'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '958694311342522429'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'general', 'last_message_id': '962396583570341949', 'id': '958694311342522430'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522429', 'name': 'General', 'last_message_id': None, 'id': '958694311342522431', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'test', 'last_message_id': '961557377000288297', 'id': '961557242061131816'}], 'stickers': [], 'name': 'TP', 'mfa_level': 0, 'nsfw_level': 0, 'default_message_notifications': 0, 'stage_instances': [], 'vanity_url_code': None, 'rules_channel_id': None, 'system_channel_flags': 0, 'member_count': 3, 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'max_video_channel_users': 25, 'discovery_splash': None, 'afk_channel_id': None, 'splash': None, 'features': [], 'premium_subscription_count': 0, 'lazy': True, 'verification_level': 0, 'preferred_locale': 'en-US', 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '958694310864363543', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '958690814509351012'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'tppython', 'mentionable': False, 'managed': True, 'id': '958695157170057289', 'icon': None, 'hoist': False, 'color': 0}], 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '0DZpxDDVFvM'}, 'metadata': {'omitted': False, 'hash': 'xv6cYd9Hs1c'}, 'channels': {'omitted': False, 'hash': 'AXglzFRIV9g'}}, 'emojis': [], 'description': None, 'premium_tier': 0, 'threads': [], 'members': [{'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'owner_id': '492045275792277523', 'system_channel_id': '958694311342522430', 'afk_timeout': 300, 'icon': None, 'guild_scheduled_events': [], 'max_members': 500000, 'large': False, 'public_updates_channel_id': None, 'id': '958694310864363543', 'banner': None, 'region': 'deprecated', 'hub_type': None, 'embedded_activities': [], 'nsfw': False, 'presences': [], 'premium_progress_bar_enabled': False, 'unavailable': False, 'application_id': None, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'explicit_content_filter': 0}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-9czr",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'tppython', 'mfa_enabled': False, 'id': '958690814509351012', 'flags': 0, 'email': None, 'discriminator': '1009', 'bot': True, 'avatar': None}, 'session_id': '7852cf0643b7646ab90ac398bb5ffde5', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '958694310864363543'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'st-pete'], 'application': {'id': '958690814509351012', 'flags': 303104}, '_trace': ['["gateway-prd-main-9czr",{"micros":75707,"calls":["discord-sessions-blue-prd-2-22",{"micros":71723,"calls":["start_session",{"micros":49329,"calls":["discord-api-f5c7b6c7-l8rjg",{"micros":44888,"calls":["get_user",{"micros":8951},"add_authorized_ip",{"micros":4488},"get_guilds",{"micros":5195},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1733,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-9czr",{"micros":75707,"calls":["discord-sessions-blue-prd-2-22",{"micros":71723,"calls":["start_session",{"micros":49329,"calls":["discord-api-f5c7b6c7-l8rjg",{"micros":44888,"calls":["get_user",{"micros":8951},"add_authorized_ip",{"micros":4488},"get_guilds",{"micros":5195},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1733,"calls":[]}]}]}] (Session ID: 7852cf0643b7646ab90ac398bb5ffde5).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'nsfw': False, 'stickers': [], 'discovery_splash': None, 'name': 'TP', 'premium_tier': 0, 'voice_states': [], 'member_count': 3, 'default_message_notifications': 0, 'guild_scheduled_events': [], 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '958694310864363543', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '958690814509351012'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'tppython', 'mentionable': False, 'managed': True, 'id': '958695157170057289', 'icon': None, 'hoist': False, 'color': 0}], 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'icon': None, 'unavailable': False, 'public_updates_channel_id': None, 'embedded_activities': [], 'premium_subscription_count': 0, 'application_id': None, 'presences': [], 'vanity_url_code': None, 'mfa_level': 0, 'owner_id': '492045275792277523', 'system_channel_flags': 0, 'splash': None, 'banner': None, 'preferred_locale': 'en-US', 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'description': None, 'emojis': [], 'hub_type': None, 'threads': [], 'max_video_channel_users': 25, 'rules_channel_id': None, 'system_channel_id': '958694311342522430', 'members': [{'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'id': '958694310864363543', 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '0DZpxDDVFvM'}, 'metadata': {'omitted': False, 'hash': 'xv6cYd9Hs1c'}, 'channels': {'omitted': False, 'hash': 'AXglzFRIV9g'}}, 'verification_level': 0, 'premium_progress_bar_enabled': False, 'afk_channel_id': None, 'stage_instances': [], 'nsfw_level': 0, 'lazy': True, 'region': 'deprecated', 'afk_timeout': 300, 'large': False, 'features': [], 'explicit_content_filter': 0, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '958694311342522428'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '958694311342522429'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'general', 'last_message_id': '962396583570341949', 'id': '958694311342522430'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522429', 'name': 'General', 'last_message_id': None, 'id': '958694311342522431', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'test', 'last_message_id': '961557377000288297', 'id': '961557242061131816'}], 'max_members': 500000}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 3, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-04-09T17:03:48.658000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '962397430052028416', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2022-03-30T11:48:55.480000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'id': '962397433634123836', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'PING', 'components': [], 'channel_id': '958694311342522430', 'author': {'username': 'ainga', 'public_flags': 0, 'id': '492045275792277523', 'discriminator': '8210', 'avatar': None}, 'attachments': [], 'guild_id': '958694310864363543'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event message
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-04-09T17:03:48.777000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'id': '962397434133225576', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'pong', 'components': [], 'channel_id': '958694311342522430', 'author': {'username': 'tppython', 'public_flags': 0, 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '958694310864363543'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event message
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/958694311342522430/messages with {"content":"pong"} has returned 200
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/958694311342522430/messages has received {'id': '962397434133225576', 'type': 0, 'content': 'pong', 'channel_id': '958694311342522430', 'author': {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2022-04-09T17:03:48.777000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 4.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-xjkr",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'tppython', 'mfa_enabled': False, 'id': '958690814509351012', 'flags': 0, 'email': None, 'discriminator': '1009', 'bot': True, 'avatar': None}, 'session_id': 'aa569f12f37aa9e494d3b4c2e48a9d04', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '958694310864363543'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'st-pete'], 'application': {'id': '958690814509351012', 'flags': 303104}, '_trace': ['["gateway-prd-main-xjkr",{"micros":239862,"calls":["discord-sessions-blue-prd-2-145",{"micros":238215,"calls":["start_session",{"micros":192695,"calls":["discord-api-f5c7b6c7-qr928",{"micros":188043,"calls":["get_user",{"micros":24420},"add_authorized_ip",{"micros":6151},"get_guilds",{"micros":43921},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":25488,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-xjkr",{"micros":239862,"calls":["discord-sessions-blue-prd-2-145",{"micros":238215,"calls":["start_session",{"micros":192695,"calls":["discord-api-f5c7b6c7-qr928",{"micros":188043,"calls":["get_user",{"micros":24420},"add_authorized_ip",{"micros":6151},"get_guilds",{"micros":43921},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":25488,"calls":[]}]}]}] (Session ID: aa569f12f37aa9e494d3b4c2e48a9d04).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'hub_type': None, 'stickers': [], 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'system_channel_flags': 0, 'name': 'TP', 'features': [], 'icon': None, 'afk_timeout': 300, 'embedded_activities': [], 'emojis': [], 'premium_progress_bar_enabled': False, 'presences': [], 'member_count': 3, 'application_id': None, 'premium_tier': 0, 'banner': None, 'preferred_locale': 'en-US', 'nsfw': False, 'mfa_level': 0, 'splash': None, 'premium_subscription_count': 0, 'members': [{'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'guild_scheduled_events': [], 'public_updates_channel_id': None, 'afk_channel_id': None, 'description': None, 'stage_instances': [], 'explicit_content_filter': 0, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '958694311342522428'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '958694311342522429'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'general', 'last_message_id': '962397434133225576', 'id': '958694311342522430'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522429', 'name': 'General', 'last_message_id': None, 'id': '958694311342522431', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'test', 'last_message_id': '961557377000288297', 'id': '961557242061131816'}], 'threads': [], 'verification_level': 0, 'vanity_url_code': None, 'region': 'deprecated', 'rules_channel_id': None, 'id': '958694310864363543', 'voice_states': [], 'max_video_channel_users': 25, 'large': False, 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'discovery_splash': None, 'system_channel_id': '958694311342522430', 'default_message_notifications': 0, 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '958694310864363543', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '958690814509351012'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'tppython', 'mentionable': False, 'managed': True, 'id': '958695157170057289', 'icon': None, 'hoist': False, 'color': 0}], 'owner_id': '492045275792277523', 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '0DZpxDDVFvM'}, 'metadata': {'omitted': False, 'hash': 'xv6cYd9Hs1c'}, 'channels': {'omitted': False, 'hash': 'AXglzFRIV9g'}}, 'max_members': 500000, 'unavailable': False, 'nsfw_level': 0, 'lazy': True}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '492045275792277523', 'timestamp': 1649524361, 'member': {'user': {'username': 'ainga', 'id': '492045275792277523', 'discriminator': '8210', 'avatar': None}, 'roles': [], 'mute': False, 'joined_at': '2022-03-30T11:48:55.480000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'channel_id': '958694311342522430', 'guild_id': '958694310864363543'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event typing
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-04-09T17:12:43.327000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '962399672968675328', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2022-03-30T11:48:55.480000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'id': '962399676198449242', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'PING', 'components': [], 'channel_id': '958694311342522430', 'author': {'username': 'ainga', 'public_flags': 0, 'id': '492045275792277523', 'discriminator': '8210', 'avatar': None}, 'attachments': [], 'guild_id': '958694310864363543'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event message
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 5, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-04-09T17:12:43.532000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'id': '962399677058277486', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'pong', 'components': [], 'channel_id': '958694311342522430', 'author': {'username': 'tppython', 'public_flags': 0, 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '958694310864363543'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event message
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/958694311342522430/messages with {"content":"pong"} has returned 200
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/958694311342522430/messages has received {'id': '962399677058277486', 'type': 0, 'content': 'pong', 'channel_id': '958694311342522430', 'author': {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2022-04-09T17:12:43.532000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 5.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+2022-04-09 19:25:46,771 PyNaCl is not installed, voice will NOT be supported
+2022-04-09 19:27:34,078 PyNaCl is not installed, voice will NOT be supported
+2022-04-09 19:29:48,516 PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:root:So should this
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-0n95",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'tppython', 'mfa_enabled': False, 'id': '958690814509351012', 'flags': 0, 'email': None, 'discriminator': '1009', 'bot': True, 'avatar': None}, 'session_id': '300f720aae06c5ed828716b01d48867d', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '958694310864363543'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'st-pete'], 'application': {'id': '958690814509351012', 'flags': 303104}, '_trace': ['["gateway-prd-main-0n95",{"micros":119600,"calls":["discord-sessions-blue-prd-2-152",{"micros":114681,"calls":["start_session",{"micros":79357,"calls":["discord-api-f5c7b6c7-zgsg5",{"micros":74950,"calls":["get_user",{"micros":13204},"add_authorized_ip",{"micros":4589},"get_guilds",{"micros":19071},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":14092,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-0n95",{"micros":119600,"calls":["discord-sessions-blue-prd-2-152",{"micros":114681,"calls":["start_session",{"micros":79357,"calls":["discord-api-f5c7b6c7-zgsg5",{"micros":74950,"calls":["get_user",{"micros":13204},"add_authorized_ip",{"micros":4589},"get_guilds",{"micros":19071},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":14092,"calls":[]}]}]}] (Session ID: 300f720aae06c5ed828716b01d48867d).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'rules_channel_id': None, 'max_members': 500000, 'name': 'TP', 'owner_id': '492045275792277523', 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '958694311342522428'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '958694311342522429'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'general', 'last_message_id': '962404936677740604', 'id': '958694311342522430'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522429', 'name': 'General', 'last_message_id': None, 'id': '958694311342522431', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'test', 'last_message_id': '961557377000288297', 'id': '961557242061131816'}], 'stickers': [], 'preferred_locale': 'en-US', 'max_video_channel_users': 25, 'large': False, 'afk_channel_id': None, 'explicit_content_filter': 0, 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '958694310864363543', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '958690814509351012'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'tppython', 'mentionable': False, 'managed': True, 'id': '958695157170057289', 'icon': None, 'hoist': False, 'color': 0}], 'hub_type': None, 'guild_scheduled_events': [], 'application_id': None, 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'icon': None, 'public_updates_channel_id': None, 'embedded_activities': [], 'splash': None, 'lazy': True, 'system_channel_flags': 0, 'stage_instances': [], 'description': None, 'features': [], 'system_channel_id': '958694311342522430', 'emojis': [], 'threads': [], 'afk_timeout': 300, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '0DZpxDDVFvM'}, 'metadata': {'omitted': False, 'hash': 'xv6cYd9Hs1c'}, 'channels': {'omitted': False, 'hash': 'AXglzFRIV9g'}}, 'voice_states': [], 'unavailable': False, 'vanity_url_code': None, 'default_message_notifications': 0, 'banner': None, 'id': '958694310864363543', 'nsfw_level': 0, 'discovery_splash': None, 'premium_tier': 0, 'member_count': 3, 'verification_level': 0, 'premium_subscription_count': 0, 'mfa_level': 0, 'presences': [], 'region': 'deprecated', 'nsfw': False, 'members': [{'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'premium_progress_bar_enabled': False}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:root:So should this
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-1gpv",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'tppython', 'mfa_enabled': False, 'id': '958690814509351012', 'flags': 0, 'email': None, 'discriminator': '1009', 'bot': True, 'avatar': None}, 'session_id': '5bfc2507b49e52318ede4e55ac73b44b', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '958694310864363543'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'st-pete'], 'application': {'id': '958690814509351012', 'flags': 303104}, '_trace': ['["gateway-prd-main-1gpv",{"micros":108336,"calls":["discord-sessions-blue-prd-2-10",{"micros":103073,"calls":["start_session",{"micros":69704,"calls":["discord-api-f5c7b6c7-zshvf",{"micros":64460,"calls":["get_user",{"micros":11062},"add_authorized_ip",{"micros":4384},"get_guilds",{"micros":7086},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-1gpv",{"micros":108336,"calls":["discord-sessions-blue-prd-2-10",{"micros":103073,"calls":["start_session",{"micros":69704,"calls":["discord-api-f5c7b6c7-zshvf",{"micros":64460,"calls":["get_user",{"micros":11062},"add_authorized_ip",{"micros":4384},"get_guilds",{"micros":7086},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 5bfc2507b49e52318ede4e55ac73b44b).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'member_count': 3, 'nsfw_level': 0, 'lazy': True, 'splash': None, 'name': 'TP', 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '958694311342522428'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '958694311342522429'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'general', 'last_message_id': '962404936677740604', 'id': '958694311342522430'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522429', 'name': 'General', 'last_message_id': None, 'id': '958694311342522431', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'test', 'last_message_id': '961557377000288297', 'id': '961557242061131816'}], 'verification_level': 0, 'emojis': [], 'max_members': 500000, 'nsfw': False, 'features': [], 'guild_scheduled_events': [], 'rules_channel_id': None, 'explicit_content_filter': 0, 'hub_type': None, 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'afk_timeout': 300, 'embedded_activities': [], 'voice_states': [], 'mfa_level': 0, 'max_video_channel_users': 25, 'premium_progress_bar_enabled': False, 'preferred_locale': 'en-US', 'members': [{'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'premium_tier': 0, 'afk_channel_id': None, 'description': None, 'public_updates_channel_id': None, 'system_channel_flags': 0, 'threads': [], 'discovery_splash': None, 'premium_subscription_count': 0, 'stickers': [], 'banner': None, 'default_message_notifications': 0, 'id': '958694310864363543', 'unavailable': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'presences': [], 'region': 'deprecated', 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '958694310864363543', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '958690814509351012'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'tppython', 'mentionable': False, 'managed': True, 'id': '958695157170057289', 'icon': None, 'hoist': False, 'color': 0}], 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '0DZpxDDVFvM'}, 'metadata': {'omitted': False, 'hash': 'xv6cYd9Hs1c'}, 'channels': {'omitted': False, 'hash': 'AXglzFRIV9g'}}, 'owner_id': '492045275792277523', 'vanity_url_code': None, 'system_channel_id': '958694311342522430', 'icon': None, 'application_id': None, 'large': False, 'stage_instances': []}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 2.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:root:So should this
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-5nk4",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'tppython', 'mfa_enabled': False, 'id': '958690814509351012', 'flags': 0, 'email': None, 'discriminator': '1009', 'bot': True, 'avatar': None}, 'session_id': '578f46ed3296094efbd7bc296caa820f', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '958694310864363543'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'st-pete'], 'application': {'id': '958690814509351012', 'flags': 303104}, '_trace': ['["gateway-prd-main-5nk4",{"micros":151384,"calls":["discord-sessions-blue-prd-2-94",{"micros":150323,"calls":["start_session",{"micros":136917,"calls":["discord-api-f5c7b6c7-592v7",{"micros":132108,"calls":["get_user",{"micros":16335},"add_authorized_ip",{"micros":20540},"get_guilds",{"micros":27996},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":9546,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-5nk4",{"micros":151384,"calls":["discord-sessions-blue-prd-2-94",{"micros":150323,"calls":["start_session",{"micros":136917,"calls":["discord-api-f5c7b6c7-592v7",{"micros":132108,"calls":["get_user",{"micros":16335},"add_authorized_ip",{"micros":20540},"get_guilds",{"micros":27996},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":9546,"calls":[]}]}]}] (Session ID: 578f46ed3296094efbd7bc296caa820f).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_MEMBER_UPDATE', 's': 2, 'op': 0, 'd': {'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'guild_id': '958694310864363543', 'flags': 0, 'deaf': False}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.state:GUILD_MEMBER_UPDATE referencing an unknown member ID: 958690814509351012. Discarding.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 3, 'op': 0, 'd': {'premium_subscription_count': 0, 'system_channel_flags': 0, 'afk_channel_id': None, 'name': 'TP', 'banner': None, 'discovery_splash': None, 'afk_timeout': 300, 'presences': [], 'system_channel_id': '958694311342522430', 'explicit_content_filter': 0, 'members': [{'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'nsfw': False, 'features': [], 'large': False, 'max_video_channel_users': 25, 'guild_scheduled_events': [], 'preferred_locale': 'en-US', 'max_members': 500000, 'hub_type': None, 'member_count': 3, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '958694310864363543', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '958690814509351012'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'tppython', 'mentionable': False, 'managed': True, 'id': '958695157170057289', 'icon': None, 'hoist': False, 'color': 0}], 'splash': None, 'description': None, 'stage_instances': [], 'premium_progress_bar_enabled': False, 'mfa_level': 0, 'threads': [], 'emojis': [], 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '0DZpxDDVFvM'}, 'metadata': {'omitted': False, 'hash': 'xv6cYd9Hs1c'}, 'channels': {'omitted': False, 'hash': 'AXglzFRIV9g'}}, 'premium_tier': 0, 'id': '958694310864363543', 'verification_level': 0, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '958694311342522428'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '958694311342522429'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'general', 'last_message_id': '962404936677740604', 'id': '958694311342522430'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522429', 'name': 'General', 'last_message_id': None, 'id': '958694311342522431', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'test', 'last_message_id': '961557377000288297', 'id': '961557242061131816'}], 'voice_states': [], 'region': 'deprecated', 'application_id': None, 'stickers': [], 'nsfw_level': 0, 'vanity_url_code': None, 'rules_channel_id': None, 'unavailable': False, 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'lazy': True, 'public_updates_channel_id': None, 'icon': None, 'default_message_notifications': 0, 'owner_id': '492045275792277523', 'embedded_activities': []}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:root:TEST
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-41q4",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'tppython', 'mfa_enabled': False, 'id': '958690814509351012', 'flags': 0, 'email': None, 'discriminator': '1009', 'bot': True, 'avatar': None}, 'session_id': '150e33c43450c8c6197b255e40f2507c', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '958694310864363543'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'st-pete'], 'application': {'id': '958690814509351012', 'flags': 303104}, '_trace': ['["gateway-prd-main-41q4",{"micros":67944,"calls":["discord-sessions-blue-prd-2-155",{"micros":64820,"calls":["start_session",{"micros":35126,"calls":["discord-api-f5c7b6c7-mhvmg",{"micros":31550,"calls":["get_user",{"micros":6149},"add_authorized_ip",{"micros":1270},"get_guilds",{"micros":2936},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15852,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-41q4",{"micros":67944,"calls":["discord-sessions-blue-prd-2-155",{"micros":64820,"calls":["start_session",{"micros":35126,"calls":["discord-api-f5c7b6c7-mhvmg",{"micros":31550,"calls":["get_user",{"micros":6149},"add_authorized_ip",{"micros":1270},"get_guilds",{"micros":2936},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15852,"calls":[]}]}]}] (Session ID: 150e33c43450c8c6197b255e40f2507c).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'afk_channel_id': None, 'name': 'TP', 'stickers': [], 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '958694310864363543', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '958690814509351012'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'tppython', 'mentionable': False, 'managed': True, 'id': '958695157170057289', 'icon': None, 'hoist': False, 'color': 0}], 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'icon': None, 'large': False, 'vanity_url_code': None, 'premium_tier': 0, 'guild_scheduled_events': [], 'member_count': 3, 'stage_instances': [], 'system_channel_flags': 0, 'owner_id': '492045275792277523', 'max_video_channel_users': 25, 'lazy': True, 'system_channel_id': '958694311342522430', 'mfa_level': 0, 'presences': [], 'afk_timeout': 300, 'explicit_content_filter': 0, 'splash': None, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '0DZpxDDVFvM'}, 'metadata': {'omitted': False, 'hash': 'xv6cYd9Hs1c'}, 'channels': {'omitted': False, 'hash': 'AXglzFRIV9g'}}, 'application_id': None, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '958694311342522428'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '958694311342522429'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'general', 'last_message_id': '962404936677740604', 'id': '958694311342522430'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522429', 'name': 'General', 'last_message_id': None, 'id': '958694311342522431', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'test', 'last_message_id': '961557377000288297', 'id': '961557242061131816'}], 'description': None, 'nsfw_level': 0, 'threads': [], 'default_message_notifications': 0, 'emojis': [], 'verification_level': 0, 'public_updates_channel_id': None, 'nsfw': False, 'features': [], 'id': '958694310864363543', 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'premium_subscription_count': 0, 'members': [{'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'discovery_splash': None, 'banner': None, 'embedded_activities': [], 'region': 'deprecated', 'premium_progress_bar_enabled': False, 'voice_states': [], 'preferred_locale': 'en-US', 'hub_type': None, 'max_members': 500000, 'rules_channel_id': None, 'unavailable': False}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+2022-04-10 00:08:57,434 TEST
+2022-04-10 00:08:57,435 Using proactor: IocpProactor
+2022-04-10 00:08:57,446 PyNaCl is not installed, voice will NOT be supported
+2022-04-10 00:08:57,446 logging in using static token
+2022-04-10 00:08:57,742 GET https://discord.com/api/v7/users/@me with None has returned 200
+2022-04-10 00:08:57,742 GET https://discord.com/api/v7/users/@me has received {'id': '958690814509351012', 'username': 'tppython', 'avatar': None, 'discriminator': '1009', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+2022-04-10 00:08:57,783 GET https://discord.com/api/v7/gateway with None has returned 200
+2022-04-10 00:08:57,784 GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2022-04-10 00:08:58,016 Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2022-04-10 00:08:58,016 Dispatching event socket_raw_receive
+2022-04-10 00:08:58,016 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-vvpl",{"micros":0.0}]']}}
+2022-04-10 00:08:58,016 Dispatching event socket_response
+2022-04-10 00:08:58,016 Dispatching event socket_raw_send
+2022-04-10 00:08:58,017 Dispatching event socket_raw_send
+2022-04-10 00:08:58,017 Shard ID None has sent the IDENTIFY payload.
+2022-04-10 00:08:58,128 Dispatching event socket_raw_receive
+2022-04-10 00:08:58,129 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-10 00:08:58,129 Dispatching event socket_response
+2022-04-10 00:08:58,239 Dispatching event socket_raw_receive
+2022-04-10 00:08:58,239 For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'tppython', 'mfa_enabled': False, 'id': '958690814509351012', 'flags': 0, 'email': None, 'discriminator': '1009', 'bot': True, 'avatar': None}, 'session_id': '25acc0d25ebd366a78bbc0a2c90574cf', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '958694310864363543'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'st-pete'], 'application': {'id': '958690814509351012', 'flags': 303104}, '_trace': ['["gateway-prd-main-vvpl",{"micros":103320,"calls":["discord-sessions-blue-prd-2-12",{"micros":101258,"calls":["start_session",{"micros":88828,"calls":["discord-api-f5c7b6c7-rjrzf",{"micros":84493,"calls":["get_user",{"micros":7905},"add_authorized_ip",{"micros":2504},"get_guilds",{"micros":48086},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1859,"calls":[]}]}]}]']}}
+2022-04-10 00:08:58,239 Dispatching event socket_response
+2022-04-10 00:08:58,240 Shard ID None has connected to Gateway: ["gateway-prd-main-vvpl",{"micros":103320,"calls":["discord-sessions-blue-prd-2-12",{"micros":101258,"calls":["start_session",{"micros":88828,"calls":["discord-api-f5c7b6c7-rjrzf",{"micros":84493,"calls":["get_user",{"micros":7905},"add_authorized_ip",{"micros":2504},"get_guilds",{"micros":48086},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1859,"calls":[]}]}]}] (Session ID: 25acc0d25ebd366a78bbc0a2c90574cf).
+2022-04-10 00:08:58,249 Dispatching event connect
+2022-04-10 00:08:58,249 Dispatching event socket_raw_receive
+2022-04-10 00:08:58,249 For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'premium_progress_bar_enabled': False, 'region': 'deprecated', 'name': 'TP', 'system_channel_id': '958694311342522430', 'large': False, 'hub_type': None, 'verification_level': 0, 'premium_tier': 0, 'presences': [], 'nsfw': False, 'members': [{'user': {'username': 'tppython', 'id': '958690814509351012', 'discriminator': '1009', 'bot': True, 'avatar': None}, 'roles': ['958695157170057289'], 'mute': False, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'banner': None, 'afk_channel_id': None, 'stickers': [], 'afk_timeout': 300, 'splash': None, 'member_count': 3, 'owner_id': '492045275792277523', 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '958694310864363543', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '958690814509351012'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'tppython', 'mentionable': False, 'managed': True, 'id': '958695157170057289', 'icon': None, 'hoist': False, 'color': 0}], 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '0DZpxDDVFvM'}, 'metadata': {'omitted': False, 'hash': 'xv6cYd9Hs1c'}, 'channels': {'omitted': False, 'hash': 'AXglzFRIV9g'}}, 'premium_subscription_count': 0, 'max_members': 500000, 'public_updates_channel_id': None, 'mfa_level': 0, 'system_channel_flags': 0, 'description': None, 'emojis': [], 'nsfw_level': 0, 'unavailable': False, 'threads': [], 'explicit_content_filter': 0, 'embedded_activities': [], 'icon': None, 'voice_states': [], 'default_message_notifications': 0, 'id': '958694310864363543', 'guild_scheduled_events': [], 'features': [], 'lazy': True, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '958694311342522428'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '958694311342522429'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'general', 'last_message_id': '962404936677740604', 'id': '958694311342522430'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '958694311342522429', 'name': 'General', 'last_message_id': None, 'id': '958694311342522431', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '958694311342522428', 'name': 'test', 'last_message_id': '961557377000288297', 'id': '961557242061131816'}], 'stage_instances': [], 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'preferred_locale': 'en-US', 'max_video_channel_users': 25, 'joined_at': '2022-03-30T11:52:17.219000+00:00', 'application_id': None, 'discovery_splash': None, 'rules_channel_id': None, 'vanity_url_code': None}}
+2022-04-10 00:08:58,250 Dispatching event socket_response
+2022-04-10 00:08:58,250 Dispatching event guild_available
+2022-04-10 00:09:00,254 Dispatching event ready
+2022-04-10 00:09:00,255 Mise en route du BOT
+2022-04-10 00:09:34,905 Received signal to terminate bot and event loop.
+2022-04-10 00:09:34,906 Cleaning up tasks.
+2022-04-10 00:09:34,906 Cleaning up after 1 tasks.
+2022-04-10 00:09:34,907 All tasks finished cancelling.
+2022-04-10 00:09:34,907 Closing the event loop.
+2022-04-10 00:12:20,926 PyNaCl is not installed, voice will NOT be supported
+2022-04-10 00:13:52,541 PyNaCl is not installed, voice will NOT be supported
+2022-04-10 00:16:38,869 PyNaCl is not installed, voice will NOT be supported
+2022-04-10 00:18:27,291 PyNaCl is not installed, voice will NOT be supported
+2022-04-10 00:20:37,681 PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
