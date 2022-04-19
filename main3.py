@@ -19,8 +19,9 @@ class DocBot(commands.Bot):
 
 
     async def on_message(self,message):
-        if message.content.lower() == "ping":       
-                await message.channel.send("pong")
+        if message.content.lower() == "help":       
+                await message.channel.send("Ceci est le bot crée pour le tp")
+
 
 
 
